@@ -68,7 +68,6 @@ function Canvas({ actions, color }) {
    */
   useEffect(() => {
     if (p5InstanceRef.current) {
-      p5InstanceRef.current.clear();
       actions.forEach(action => drawAction(p5InstanceRef.current, action));
     }
   }, [actions]);
